@@ -26,7 +26,7 @@ import javax.websocket.server.ServerEndpoint;
 public class MyWhiteboard {
 
     private static Set<Session> peers = Collections.synchronizedSet(new HashSet<Session>());
-
+    
     @OnOpen
     public void onOpen(Session peer) {
         peers.add(peer);

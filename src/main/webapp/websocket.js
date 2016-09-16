@@ -7,8 +7,8 @@ var wsUri = "ws://" + document.location.host + document.location.pathname + "whi
 var websocket = new WebSocket(wsUri);
 websocket.binaryType = "arraybuffer";
 
-websocket.onmessage = function(evt) { onMessage(evt) };
-websocket.onerror = function(evt) { onError(evt) };
+websocket.onmessage = function(evt) { onMessage(evt); };
+websocket.onerror = function(evt) { onError(evt); };
 
 function sendText(json) {
     console.log("sending text: " + json);

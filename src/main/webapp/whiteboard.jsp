@@ -1,3 +1,10 @@
+<%-- 
+    Document   : index
+    Created on : 15/09/2016, 06:40:56 PM
+    Author     : John
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,8 +12,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
+        <h2 style="float:right;">${nombreUsuario} <button><a href="logout">Cerrar sesión</a></button></h2>
         <h1>Collaborative Whiteboard</h1>
-
         <table>
             <tr>
                 <td>
@@ -38,16 +45,15 @@
                                 <td> </td>
                                 <td> </td>
                             </tr>
-
                         </table>
-
-
                     </form>
                 </td>
             </tr>
         </table>
+        
+        <>
 
-        <script type="text/javascript" src="websocket.js"></script>
-        <script type="text/javascript" src="whiteboard.js"></script>
+        <script type="text/javascript" src="./websocket.js"></script>
+        <script type="text/javascript" src="./whiteboard.js"></script>
     </body>
 </html>

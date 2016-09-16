@@ -1,0 +1,1 @@
+Mágicamente, el archivo index.jsp es el archivo que se abre cuando uno accede a la página web.
